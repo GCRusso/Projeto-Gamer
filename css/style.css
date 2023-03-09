@@ -1,0 +1,79 @@
+/* Reset margin */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* layout grid */
+.layout-grid{
+
+}
+
+/* import fonts */
+@font-face {
+    font-family: "titillium-bold";
+    src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: "titillium-black" ;
+    src: url(../assets/fonts/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* MOBILE FIRST */
+
+/* HEADER TOP */
+
+.header-top{
+
+}
+
+.contatos{
+    
+}
+
+.phone{
+
+}
+
+.email{
+
+}
+
+.midias-socias{
+
+}
+
+/* HEADER BOTTOM */
+
+.header-bottom{
+
+}
+
+.menu-hamburguer{
+
+}
+
+.menu-pontinhos{
+
+}
+
+.logotipo{
+
+}
+
+.menu{
+    
+}
