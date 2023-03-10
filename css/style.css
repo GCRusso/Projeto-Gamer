@@ -6,12 +6,8 @@
     box-sizing: border-box;
 }
 
-/* layout grid */
-.layout-grid{
-
-}
-
 /* import fonts */
+
 @font-face {
     font-family: "titillium-bold";
     src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
@@ -32,48 +28,60 @@
     src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-/* MOBILE FIRST */
+/* CLASSES GENERICAS */
 
-/* HEADER TOP */
-
-.header-top{
-
-}
-
-.contatos{
+/* layout grid */
+.layout-grid {
+    border: 1px solid greenyellow;
+    width: 90%;
+    margin: 0 auto;
     
 }
 
-.phone{
+/* alinhamento  */
+.align-itens-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MOBILE FIRST */
+body{
+    background-color: #1b1426;
+}
+
+/* HEADER */
+header {
+    height: 60px;
+}
+
+/* HEADER TOP */
+ header .header-top{  /* ocultando o header top*/
+    display: none;
 
 }
 
-.email{
+header .header-bottom .menu { /* menu left*/
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh- 60px);
 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid greenyellow;
 }
 
-.midias-socias{
-
+header .header-bottom .menu-usuarios{ /* menu right*/
+    display: none;
 }
 
 /* HEADER BOTTOM */
-
-.header-bottom{
-
+header .header-bottom{
+    height: 100%;
 }
+header .header-bottom img.logotipo{
+    width: 86px;
 
-.menu-hamburguer{
-
-}
-
-.menu-pontinhos{
-
-}
-
-.logotipo{
-
-}
-
-.menu{
-    
 }
