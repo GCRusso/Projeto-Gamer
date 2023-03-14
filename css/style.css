@@ -32,7 +32,6 @@
 
 /* layout grid */
 .layout-grid {
-    border: 1px solid greenyellow;
     width: 90%;
     margin: 0 auto;
 
@@ -46,8 +45,13 @@
     padding-top: 15px;
 }
 
-.mostrar-menu{
-    left: 0px;
+.mostrar-menu {
+    left: 0px !important;
+
+}
+
+.mostrar-usuarios {
+    right: 0px !important;
 }
 
 /* MOBILE FIRST */
@@ -93,7 +97,7 @@ header .header-bottom {
 
 header .header-bottom img.logotipo {
     width: 86px;
-    
+
 }
 
 header .header-bottom .menu {
@@ -110,30 +114,32 @@ header .header-bottom .menu {
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
 
+    transition: left 0.7s;
+
 }
 
 /* Somente links "filhos diretos" com este sinal de maior ">" */
-header .header-bottom .menu > a{
+header .header-bottom .menu>a {
     font-family: inter;
     font-size: 15px;
     text-decoration: none;
     color: white;
     text-transform: capitalize;
-    border-bottom:2px solid #F9AA01 ;
+    border-bottom: 2px solid #F9AA01;
     padding: 30px 0px;
     text-align: center;
 }
 
-header .header-bottom .menu > a:last-of-type{
-    border:none;
-}
-header .header-bottom .menu > a:first-of-type{
-    color: #F9AA01;
+header .header-bottom .menu>a:last-of-type {
     border: none;
+}
+
+header .header-bottom .menu>a:first-of-type {
+    color: #F9AA01;
     font-weight: bold;
 }
 
-header .header-bottom .midias-socias{
+header .header-bottom .midias-socias {
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -141,8 +147,59 @@ header .header-bottom .midias-socias{
 }
 
 
-header .header-bottom .menu-usuarios {
+header .header-bottom>.menu-usuarios {
     /* menu right*/
-    display: none;
     z-index: 22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    position: fixed;
+    top: 60px;
+    right: -106px;
+    width: 75px;
+    height: 173px;
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    transition: right 0.7s;
+}
+
+/* ****MAIN**** */
+main {
+    margin-top: 60px
+}
+
+/* LIGA GAMERS */
+.banner {
+    background-image: ;
+    height: 606px;
+    width: 100%;
+    background-image: url(../assets/images/banner\ liga\ gamers\ mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner h1 {
+    font-size: 40px;
+    font-family: "titillium-black";
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 5px 5px 25px #fd4255;
+}
+
+.banner button {
+    width: 171px;
+    height: 40px;
+    font-family:"titillium-bold" ;
+    background-color: #F9AA01;
+    font-size: 24px;
+    border-radius: 8px;
+    border: none;
+    text-transform: capitalize;
 }

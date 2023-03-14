@@ -58,14 +58,15 @@
 
         <div class="header-bottom">
             <div class="layout-grid align-itens-between-center">
-                <img onclick="mostrarMenu()" class="menu-hamburguer" src="../Projeto-Gamer/assets/icons/menu hamburguer.svg"
+                <img onclick="mostrarMenu()" class="menu-hamburguer"
+                    src="../Projeto-Gamer/assets/icons/menu hamburguer.svg"
                     alt="Icone hamburguer para abrir e fechar o menu mobile">
 
                 <img class="logotipo" src="../Projeto-Gamer/assets/images/logotipo-gamerlogo 1.svg"
                     alt="Logotipo da empresa. escrito gamer e um joystick">
 
                 <!-- menu 3 pontinhos / icones perfil - compras - pesquisa -->
-                <img class="menu-pontinhos" src="../Projeto-Gamer/assets/icons/menu 3 pontos.svg"
+                <img onclick="mostrarMidias()" class="menu-pontinhos" src="../Projeto-Gamer/assets/icons/more-white.svg"
                     alt="icone 3 pontinhos abre o menu usuario">
 
                 <!-- Box left -->
@@ -77,12 +78,12 @@
 
                     <!-- Visivel apenas no mobile -->
                     <a class="phone">
-                        <img src="../Projeto-Gamer/assets/icons/phone.svg" alt="Icone de telefone">
+                        <img src="../Projeto-Gamer/assets/icons/phone-black.svg" alt="Icone de telefone">
                         <span>(11) 0900-1010</span>
                     </a>
 
                     <a class="email">
-                        <img src="../Projeto-Gamer/assets/icons/icone_email mobile.svg" alt="Icone do email">
+                        <img src="../Projeto-Gamer/assets/icons/email-black.svg" alt="Icone do email">
                         <span>contato@gamer.com.br</span>
                     </a>
 
@@ -90,15 +91,15 @@
                     <div class="midias-socias">
 
                         <a href="">
-                            <img src="../Projeto-Gamer/assets/icons/Facebook Logo white.svg"
+                            <img src="../Projeto-Gamer/assets/icons/facebook-black.svg"
                                 alt="Imagem Link do Facebook da empresa Gamer">
                         </a>
                         <a href="">
-                            <img src="../Projeto-Gamer/assets/icons/Instragam Logo white.svg"
+                            <img src="../Projeto-Gamer/assets/icons/instagram-black.svg"
                                 alt="Imagem Link do Instagram da empresa Gamer">
                         </a>
                         <a href="">
-                            <img src="../Projeto-Gamer/assets/icons/Linkedin logo white.svg"
+                            <img src="../Projeto-Gamer/assets/icons/linkedin-black.svg"
                                 alt="Imagem Link do Linkedin da empresa Gamer">
                         </a>
 
@@ -106,26 +107,34 @@
 
                 </nav>
 
-                <!-- Menu usuarios - Box right -->
-                <nav class="menu-usuarios">
-                    <a href="">
-                        <img src="../Projeto-Gamer/assets/icons/User.svg" alt="icone de perfil">
-                    </a>
-                    <a href="">
-                        <img src="../Projeto-Gamer/assets/icons/Shopping bag.svg" alt="icone de compras">
-                    </a>
-                    <a href="">
-                        <img src="../Projeto-Gamer/assets/icons/Search.svg" alt="icone de pesquisa">
-                    </a>
-                </nav>
 
             </div>
+
+            <!-- Menu usuarios - Box right -->
+            <nav class="menu-usuarios" id="menu-usuarios">
+                <a href="">
+                    <img src="../Projeto-Gamer/assets/icons/user-white.svg" alt="icone de perfil">
+                </a>
+                <a href="">
+                    <img src="../Projeto-Gamer/assets/icons/bag-white.svg" alt="icone de compras">
+                </a>
+                <a href="">
+                    <img src="../Projeto-Gamer/assets/icons/search-white.svg" alt="icone de pesquisa">
+                </a>
+            </nav>
         </div>
 
     </header>
 
     <!-- MAIN -->
+    <!-- LIGA GAMERS -->
     <main>
+        <section class="banner">
+            <h1>liga gamers</h1>
+            <button class="botao-sobre">sobre</button>
+            
+
+        </section>
 
     </main>
 
@@ -137,6 +146,10 @@
     <script>
         function mostrarMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu")
+        }
+
+        function mostrarMidias() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios")
         }
     </script>
 </body>
