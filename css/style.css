@@ -28,12 +28,13 @@
     src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-/* CLASSES GENERICAS */
+/**** CLASSES GENERICAS ****/
 
 /* layout grid */
 .layout-grid {
     width: 90%;
     margin: 0 auto;
+    /* border: 1px solid greenyellow; */
 
 }
 
@@ -54,6 +55,9 @@
     right: 0px !important;
 }
 
+
+
+
 /* MOBILE FIRST */
 body {
     color: #FFFF;
@@ -63,7 +67,7 @@ body {
 
 
 
-/*** HEADER ***/
+/**** HEADER ****/
 
 header {
     height: 60px;
@@ -78,7 +82,8 @@ header {
 
 
 
-/*** HEADER TOP ***/
+
+/**** HEADER TOP ****/
 
 header .header-top {
     /* ocultando o header top*/
@@ -90,7 +95,7 @@ header .header-top {
 
 
 
-/*** HEADER BOTTOM ***/
+/**** HEADER BOTTOM ****/
 header .header-bottom {
     height: 100%;
 }
@@ -167,12 +172,18 @@ header .header-bottom>.menu-usuarios {
     transition: right 0.7s;
 }
 
-/* ****MAIN**** */
+
+
+
+/***** MAIN *****/
 main {
     margin-top: 60px
 }
 
-/* LIGA GAMERS */
+
+
+
+/**** LIGA GAMERS ****/
 .banner {
     background-image: ;
     height: 606px;
@@ -181,6 +192,11 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 450px;
 }
 
 .banner h1 {
@@ -196,10 +212,157 @@ main {
 .banner button {
     width: 171px;
     height: 40px;
-    font-family:"titillium-bold" ;
+    font-family: "titillium-bold";
     background-color: #F9AA01;
     font-size: 24px;
     border-radius: 8px;
     border: none;
     text-transform: capitalize;
+}
+
+
+
+
+/**** SECTION JOGOS ****/
+
+.background-jogos {
+    background-color: #1B1426;
+    height: 591px;
+    width: 100%;
+}
+
+.jogos {
+    height: 591px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+
+
+/**** SECTION TIME PROGRAMER ****/
+
+/* linha abaixo do texto */
+#line {
+    width: 205px;
+    border: 2px solid black;
+}
+
+#h2-programer {
+    font-family: "titillium-black";
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+    padding-top: 73px;
+    padding-bottom: 35px;
+}
+
+/* para alinhamento da linha e o titulo */
+#align-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progamer {
+    background-color: #F9AA01;
+    height: 1535px;
+    width: 100%;
+}
+
+.h2-white {
+    font-family: "titillium-black";
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+
+.paragrafo {
+    font-family: quicksand;
+    color: white;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.box-purple {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 231px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+
+}
+
+
+/* Tablets >= 768px */
+@media screen and (min-width: 768px) {}
+
+/* Desktops >= 1200px */
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+
+        border: 3px dotted yellowgreen;
+    }
+
+
+
+
+    /**** HEADER ****/
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    header .header-bottom .menu{
+        position: static;
+        height: 140px;
+        flex-direction: row;
+        background-color: red;
+    }
+
+    header .header-bottom .midias-socias,
+    header .menu-hamburguer,
+    header .header-bottom img.menu-pontinhos{
+        display: none;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+        background-color: red;
+    }
+
+    header .header-bottom .menu-usuarios{
+        position: static;
+        flex-direction: row;
+        width: 180px;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    
+
+
+
+
+
+
+
+    /**** MAIN ****/
+    main {
+        margin-top: 0px;
+    }
 }
