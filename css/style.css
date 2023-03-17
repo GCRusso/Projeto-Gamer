@@ -141,8 +141,8 @@ header .header-bottom .menu>a:last-of-type {
     border: none;
 }
 
-header .header-bottom .menu>a:first-of-type {
-    color: #F9AA01;
+header .header-bottom .menu>a:hover {
+    background-color: #F9AA01;
     font-weight: bold;
 }
 
@@ -187,7 +187,6 @@ main {
 
 /**** LIGA GAMERS ****/
 .banner {
-    background-image: ;
     height: 606px;
     width: 100%;
     background-image: url(../assets/images/banner\ liga\ gamers\ mobile.png);
@@ -231,7 +230,6 @@ main {
     background-color: #1B1426;
     height: 591px;
     width: 100%;
-    background-size: cover;
 }
 
 .jogos {
@@ -253,7 +251,7 @@ main {
     width: 205px;
     border: 2px solid black;
 }
-
+ 
 #h2-programer {
     font-family: "titillium-black";
     text-transform: uppercase;
@@ -292,14 +290,14 @@ main {
 }
 
 .box-purple {
-    border: 1px solid red;
+    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 231px;
     height: 300px;
-    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.7), rgba(47, 07, 109, 0.4));
     backdrop-filter: blur(45px);
 
 
@@ -424,6 +422,14 @@ main {
         padding: 0px;
         margin: 0px;
         font-size: 14px;
+        transition: 0.4s;
+    }
+
+    header .header-bottom .menu>a:hover {
+        color: #F9AA01;
+        font-weight: bold;
+        background-color: transparent;
+    
     }
 
     /* IMAGEM LOGOTIPO HEADER */
@@ -431,21 +437,14 @@ main {
         width: 200px;
     }
 
-    header .header-bottom .menu>a:first-of-type {
-        color: #F9AA01;
-        font-weight: bold;
-    }
-
-
-
-
-
-
 
 
 
 
     /**** MAIN ****/
+
+    /**** LIGA GAMERS BANNER ****/
+
     main {
         margin-top: 0px;
     }
@@ -468,4 +467,30 @@ main {
         width: 205px;
         margin-bottom: 150px;
     }
+
+
+
+
+/**** SECTION JOGOS ****/
+
+.background-jogos{
+    height: 500px;
 }
+
+.jogos{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-jogos {
+    height: 313px;
+    width: 556px;
+}
+
+
+
+
+/**** FOOTER ****/
