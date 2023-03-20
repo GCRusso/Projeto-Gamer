@@ -251,7 +251,7 @@ main {
     width: 205px;
     border: 2px solid black;
 }
- 
+
 #h2-programer {
     font-family: "titillium-black";
     text-transform: uppercase;
@@ -303,17 +303,46 @@ main {
 
 }
 
+
+
+
+
 /**** FOOTER ****/
 
 footer {
-    padding-top: 90px ;
+    padding-top: 90px;
     padding-bottom: 40px;
     background-image: url(../assets/images/background-footer.png);
     box-shadow: inset 0px 30px 500px rgba(0, 0, 0, 1);
 
 }
 
-footer #sobre{
+footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1530px;
+}
+
+/* Titulos Contatos/Links Uteis /Newsletter */
+footer .titulos-footer {
+    font-size: 30px;
+    font-family: "titillium-black";
+    margin-bottom: 45px;
+
+}
+
+/* cor e tamanho da linha abaixo dos titulos */
+footer .color-hr {
+    border: 3px solid #F9AA01;
+    width: 112px;
+}
+
+
+
+
+/* SOBRE E LOGO */
+footer #sobre {
     height: 304px;
     width: 100%;
     padding: 15px 5px;
@@ -325,22 +354,141 @@ footer #sobre{
 
 }
 
-footer #sobre > img{
+footer #sobre>img {
     width: 110px;
     height: 32px;
 }
 
-footer #sobre p{
+footer #sobre p {
+
     text-align: center;
     font-family: quicksand;
     font-size: 14px;
 }
 
-footer #midias-sociais-footer{
+/* ajuste de espacamento das redes sociais */
+footer #midias-sociais-footer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+
+
+
+
+/* LINKS UTEIS */
+/* cria a linha laranja antes dos links */
+footer .footer-top .menu-footer a:before {
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+
+}
+
+footer .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+/**** CONTATOS *****/
+/* titulos dos contatos */
+footer .contatos-titulos {
+    font-family: "titillium-bold";
+    font-size: 16px;
+    color: #F9AA01;
+
+}
+
+footer #contatos p {
+    font-family: "titillium-bold";
+    font-size: 16px;
+    color: white;
+}
+
+footer #contatos {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+footer .footer-top li {
+    list-style-type: none;
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+
+footer .menu-footer a {
+    text-decoration: none;
+    color: white;
+    font-family: "titillium-bold";
+    font-size: 16px;
+}
+
+
+
+
+
+/**** NEWSLETTER ****/
+footer .footer-top #newsletter input {
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 333px;
+    height: 40px;
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
+    backdrop-filter: blur(6px);
+    margin-bottom: 15px;
+}
+
+footer .footer-top #newsletter button {
+    background-color: #F9AA01;
+    color: black;
+    font-family: "titillium-bold";
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 333px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 162px;
+}
+
+footer #newsletter input::placeholder {
+    font-family: "titillium-bold";
+    font-size: 16px;
+    color: white;
+    padding-left: 18px;
+}
+
+
+
+
+/* COPYRIGHT E BOTAO TOPO */
+
+#button-top {
+    margin-left: 290px;
+}
+
+footer .footer-bottom p {
+    font-family: "titillium-bold";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 30px 0px;
 }
 
 
@@ -419,7 +567,7 @@ footer #midias-sociais-footer{
     /* MIDIAS SOCIAIS */
     header .header-top .midias-socias {
         width: 120px;
-        
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -489,7 +637,7 @@ footer #midias-sociais-footer{
         color: #F9AA01;
         font-weight: bold;
         background-color: transparent;
-    
+
     }
 
     /* IMAGEM LOGOTIPO HEADER */
@@ -509,12 +657,12 @@ footer #midias-sociais-footer{
         margin-top: 0px;
     }
 
-    .banner{
+    .banner {
         background-image: url(../assets/images/banner\ liga\ gamers\ desktop.png);
 
         background-repeat: no-repeat;
         background-position: top;
-        background-size: 100% ;
+        background-size: 100%;
         height: 722px;
     }
 
@@ -531,26 +679,27 @@ footer #midias-sociais-footer{
 
 
 
-/**** SECTION JOGOS ****/
+    /**** SECTION JOGOS ****/
 
-.background-jogos{
-    height: 500px;
-}
+    .background-jogos {
+        height: 500px;
+    }
 
-.jogos{
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
+    .jogos {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.img-jogos {
-    height: 313px;
-    width: 556px;
-}
-
-
+    .img-jogos {
+        height: 313px;
+        width: 556px;
+    }
 
 
-/**** FOOTER ****/
+
+
+
+    /**** FOOTER ****/
