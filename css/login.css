@@ -1,0 +1,434 @@
+/* Reset margin */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* import fonts */
+
+@font-face {
+    font-family: "titillium-bold";
+    src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: "titillium-black";
+    src: url(../assets/fonts/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "titillium-regular" ;
+    src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
+}
+
+/**** CLASSES GENERICAS ****/
+
+/* layout grid */
+.layout-grid {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/* alinhamento  */
+.align-itens-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 49px;
+}
+
+.mostrar-menu {
+    left: 0px !important;
+    
+}
+
+.mostrar-usuarios {
+    right: 0px !important;
+}
+
+
+
+
+/* MOBILE FIRST */
+body {
+    color: #FFFF;
+    
+}
+
+
+
+
+/**** HEADER ****/
+
+header {
+    height: 60px;
+    background-color: #1b1426;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    z-index: 20;
+}
+
+
+
+
+/**** HEADER TOP ****/
+
+header .header-top {
+    /* ocultando o header top*/
+    display: none;
+    align-items: center;
+    
+}
+
+
+
+
+/**** HEADER BOTTOM ****/
+header .header-bottom {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header .header-bottom img.logotipo {
+    width: 86px;
+
+}
+
+header .header-bottom .menu {
+    /* menu left*/
+    position: fixed;
+    z-index: 21;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    
+    transition: left 0.7s;
+    
+}
+
+/* Somente links "filhos diretos" com este sinal de maior ">" */
+header .header-bottom .menu>a {
+    font-family: inter;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    border-bottom: 2px solid #F9AA01;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+header .header-bottom .menu>a:last-of-type {
+    border: none;
+}
+
+header .header-bottom .menu>a:hover {
+    background-color: #F9AA01;
+    font-weight: bold;
+}
+
+header .header-bottom .midias-socias {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 35px;
+}
+
+
+header .header-bottom .menu-usuarios {
+    /* menu right*/
+    z-index: 22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    position: fixed;
+    top: 60px;
+    right: -106px;
+    width: 75px;
+    height: 173px;
+    
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    transition: right 0.7s;
+}
+
+
+
+
+/**** MAIN  ****/
+
+#h1-login{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**** FOOTER ****/
+
+footer {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    background-image: url(../assets/images/background-footer.png);
+    box-shadow: inset 0px 30px 500px rgba(0, 0, 0, 1);
+
+}
+
+footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1530px;
+}
+
+/* Titulos Contatos/Links Uteis /Newsletter */
+footer .titulos-footer {
+    font-size: 30px;
+    font-family: "titillium-black";
+    margin-bottom: 45px;
+
+}
+
+/* cor e tamanho da linha abaixo dos titulos */
+footer .color-hr {
+    border: 3px solid #F9AA01;
+    width: 112px;
+}
+
+
+
+
+/* SOBRE E LOGO */
+footer #sobre {
+    height: 304px;
+    width: 100%;
+    padding: 15px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer #sobre>img {
+    width: 110px;
+    height: 32px;
+}
+
+footer #sobre p {
+
+    text-align: center;
+    font-family: quicksand;
+    font-size: 14px;
+}
+
+/* ajuste de espacamento das redes sociais */
+footer #midias-sociais-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* LINKS UTEIS */
+/* cria a linha laranja antes dos links */
+footer .footer-top .menu-footer a:before {
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+
+}
+
+footer .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+/**** CONTATOS *****/
+/* titulos dos contatos */
+footer .contatos-titulos {
+    font-family: "titillium-bold";
+    font-size: 16px;
+    color: #F9AA01;
+
+}
+
+footer #contatos p {
+    font-family: "titillium-bold";
+    font-size: 16px;
+    color: white;
+}
+
+footer #contatos {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+footer .footer-top li {
+    list-style-type: none;
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+
+footer .menu-footer a {
+    text-decoration: none;
+    color: white;
+    font-family: "titillium-bold";
+    font-size: 16px;
+}
+
+
+
+
+
+/**** NEWSLETTER ****/
+footer .footer-top #newsletter input {
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 333px;
+    height: 40px;
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
+    backdrop-filter: blur(6px);
+    margin-bottom: 15px;
+}
+
+footer .footer-top #newsletter button {
+    background-color: #F9AA01;
+    color: black;
+    font-family: "titillium-bold";
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 333px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 162px;
+}
+
+footer #newsletter input::placeholder {
+    font-family: "titillium-regular";
+    font-size: 16px;
+    color: white;
+    padding-left: 18px;
+}
+
+
+
+
+/* COPYRIGHT E BOTAO TOPO */
+
+#button-top {
+    margin-left: 290px;
+}
+
+footer .footer-bottom p {
+    font-family: "titillium-regular";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 30px 0px;
+}

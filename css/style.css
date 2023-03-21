@@ -284,9 +284,16 @@ main {
 
 /* box purple */
 .box-purple {
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-image-source: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     border-image-slice: 1;
+    
+    background-image: 
+    /* efeito aplicado ao ao box a partir do padding */
+    linear-gradient(to right, rgba(228, 228, 228,1), rgba(228, 228, 228,0.3)) padding-box,
+    /* efeito aplicado apenas na borda */
+    linear-gradient(to right, rgba(255, 255, 255,1), rgba(255, 255, 255,0)) border-box;
+    
     
     
     
