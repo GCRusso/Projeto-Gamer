@@ -28,13 +28,17 @@
     src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+@font-face {
+    font-family: "titillium-regular" ;
+    src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
+}
+
 /**** CLASSES GENERICAS ****/
 
 /* layout grid */
 .layout-grid {
     width: 90%;
     margin: 0 auto;
-    /* border: 1px solid greenyellow; */
 
 }
 
@@ -48,7 +52,7 @@
 
 .mostrar-menu {
     left: 0px !important;
-
+    
 }
 
 .mostrar-usuarios {
@@ -61,7 +65,7 @@
 /* MOBILE FIRST */
 body {
     color: #FFFF;
-
+    
 }
 
 
@@ -89,7 +93,7 @@ header .header-top {
     /* ocultando o header top*/
     display: none;
     align-items: center;
-
+    
 }
 
 
@@ -115,14 +119,14 @@ header .header-bottom .menu {
     left: -80vw;
     width: 80vw;
     height: calc(100vh - 60px);
-
+    
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-
+    
     transition: left 0.7s;
-
+    
 }
 
 /* Somente links "filhos diretos" com este sinal de maior ">" */
@@ -162,13 +166,13 @@ header .header-bottom .menu-usuarios {
     justify-content: center;
     justify-content: space-around;
     flex-direction: column;
-
+    
     position: fixed;
     top: 60px;
     right: -106px;
     width: 75px;
     height: 173px;
-
+    
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
     transition: right 0.7s;
@@ -238,7 +242,7 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-
+    
 }
 
 
@@ -246,12 +250,21 @@ main {
 
 /**** SECTION TIME PROGRAMER ****/
 
+/* background and height programer */
+.progamer {
+    background-color: #F9AA01;
+    height: 1535px;
+    width: 100%;
+}
+
 /* linha abaixo do texto */
 #line {
     width: 205px;
     border: 2px solid black;
 }
 
+
+/* titulo principal programer */
 #h2-programer {
     font-family: "titillium-black";
     text-transform: uppercase;
@@ -269,39 +282,142 @@ main {
     flex-direction: column;
 }
 
-.progamer {
-    background-color: #F9AA01;
-    height: 1535px;
-    width: 100%;
+/* box purple */
+.box-purple {
+    border: 1px solid white;
+    border-image-source: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    border-image-slice: 1;
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 07, 109, 0.8));
+    backdrop-filter: blur(15px);
+    border-radius: 8px;
+    
+    width: 231px;
+    height: 300px;
+    
+    position: relative;
+    left: 105px;
+    bottom: 385px;
 }
 
+/* posicao da segunda box purple */
+#position-box{
+    position: relative;
+    left: 0px;
+    bottom: 300px;
+}
+
+
+/* titulo box purple */
 .h2-white {
     font-family: "titillium-black";
     text-transform: uppercase;
     font-size: 18px;
     color: white;
+    margin-top: 20px;
 }
 
+/* paragrafo box purple */
 .paragrafo {
     font-family: quicksand;
     color: white;
     font-size: 13px;
     text-transform: capitalize;
+    padding: 20px 30px;
+    text-align: start;
+    
 }
 
-.box-purple {
-    border: 1px solid white;
+/* image yellow girl */
+#yellow-girl{
+    margin-top: 90px;
+}
+
+
+
+
+
+/**** NOTICIAS ****/
+
+/* imagem de fundo section noticias */
+#background-img-noticias{
+    background-image: url(../assets/images/backgrund_notícias.svg);
+    height: 3645px;
+}
+
+/* titulo noticias */
+#noticias-h2{
+    font-family: "titillium-black" ;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 35px 0px;
+}
+
+/* borda de baixo do titulo noticias */
+#hr-noticias{
+    width: 204px;
+    border: 2px solid #F9AA01;
+    margin-bottom: 125px;
+}
+
+/* alinhamento borda e titulo */
+#align-center{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 231px;
-    height: 300px;
-    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.7), rgba(47, 07, 109, 0.4));
-    backdrop-filter: blur(45px);
-
-
 }
+
+/* box noticias */
+.box-noticias{
+    width: 335px;
+    height: 387px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(29, 26, 52, 0.3), rgba(5, 1, 12, 0.8));
+    backdrop-filter: blur(6px);
+}
+
+/* dimensao do tamanho da imagem box noticias */
+#img-box{
+    width: 100%;
+    height: 43%;
+    border-radius: 8px;
+}
+
+/* alinhamento da box noticias */
+.align-box-noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.h3-noticias{
+    font-family: "titillium-bold";
+    font-size: 24px;
+    padding: 5px 25px;
+}
+
+.p-noticias{
+    padding: 20px;
+    font-family: quicksand;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+
+
 
 
 
@@ -467,7 +583,7 @@ footer .footer-top #newsletter button {
 }
 
 footer #newsletter input::placeholder {
-    font-family: "titillium-bold";
+    font-family: "titillium-regular";
     font-size: 16px;
     color: white;
     padding-left: 18px;
@@ -483,7 +599,7 @@ footer #newsletter input::placeholder {
 }
 
 footer .footer-bottom p {
-    font-family: "titillium-bold";
+    font-family: "titillium-regular";
     font-size: 16px;
     display: flex;
     align-items: center;
