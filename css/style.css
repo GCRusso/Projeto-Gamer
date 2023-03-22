@@ -290,9 +290,9 @@ main {
     
     background-image: 
     /* efeito aplicado ao ao box a partir do padding */
-    linear-gradient(to right, rgba(228, 228, 228,1), rgba(228, 228, 228,0.3)) padding-box,
+        linear-gradient(to right bottom, rgba(228, 228, 228,1), rgba(228, 228, 228,0.3)) padding-box,
     /* efeito aplicado apenas na borda */
-    linear-gradient(to right, rgba(255, 255, 255,1), rgba(255, 255, 255,0)) border-box;
+        linear-gradient(to right bottom, rgba(255, 255, 255,1), rgba(255, 255, 255,0)) border-box;
     
     
     
@@ -821,8 +821,4 @@ footer .footer-bottom p {
         width: 556px;
     }
 
-
-
-
-
-    /**** FOOTER ****/
+}
