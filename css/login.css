@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: "titillium-regular" ;
+    font-family: "titillium-regular";
     src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
 }
 
@@ -52,7 +52,7 @@
 
 .mostrar-menu {
     left: 0px !important;
-    
+
 }
 
 .mostrar-usuarios {
@@ -65,7 +65,7 @@
 /* MOBILE FIRST */
 body {
     color: #FFFF;
-    
+
 }
 
 
@@ -93,7 +93,7 @@ header .header-top {
     /* ocultando o header top*/
     display: none;
     align-items: center;
-    
+
 }
 
 
@@ -119,14 +119,14 @@ header .header-bottom .menu {
     left: -80vw;
     width: 80vw;
     height: calc(100vh - 60px);
-    
+
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-    
+
     transition: left 0.7s;
-    
+
 }
 
 /* Somente links "filhos diretos" com este sinal de maior ">" */
@@ -166,13 +166,13 @@ header .header-bottom .menu-usuarios {
     justify-content: center;
     justify-content: space-around;
     flex-direction: column;
-    
+
     position: fixed;
     top: 60px;
     right: -106px;
     width: 75px;
     height: 173px;
-    
+
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
     transition: right 0.7s;
@@ -182,34 +182,58 @@ header .header-bottom .menu-usuarios {
 
 
 /**** MAIN  ****/
-main{
+main {
     padding-top: 59px;
     height: 687px;
     background-image: url(../assets/images/background\ -\ login.png);
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-size: cover;
-} 
+}
 
 
 /* BOX DO LOGIN */
-#box-login{
-    border: 1px solid greenyellow;
+#box-login {
+    align-items: center;
     width: 335px;
     height: 462px;
-    
     display: flex;
-    justify-content: center;
-    padding-top: 46px;
+    justify-content: space-around;
+    flex-direction: column;
+
+    border-radius: 8px;
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 03, 65, 0.4));
+    backdrop-filter: blur(15px);
+
+    /* parte do fundo errado da borda gradient */
+    position: relative;
+    z-index: 5;
+   
     
     
 }
 
-#hr-login{
+/* FUNDO ERRADO DA BORDA GRADIENT */
+.border-gradient{
+    width: 336px;
+    height: 463px;
+
+    border-radius: 8px;
+
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(15px);
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+#hr-login {
     border: 2px solid #F9AA01;
 }
 
 /* align/ justify center BOX-LOGIN*/
-#box-flex{
+#box-flex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,14 +241,60 @@ main{
 }
 
 /* TITULO LOGIN */
-main section .h1login{
-    font-family:"titillium-black";
+main section .h1login {
+    font-family: "titillium-black";
     font-size: 28px;
     color: white;
     text-transform: uppercase;
 }
 
+/* BOX EMAIL */
+.box-input-icon {
+    width: 273px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;  
+    padding: 8px;
 
+}
+
+/* Input */
+.box-input-icon input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+/* Place holder Email/Password */
+.input::placeholder {
+    font-family: "titillium-regular";
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+/* Botao de logar */
+.button-logar {
+    background-color: #F9AA01;
+    color: black;
+    font-family: "titillium-bold";
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 273px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
