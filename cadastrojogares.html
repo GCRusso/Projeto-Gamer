@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Equipes</title>
-    <link rel="stylesheet" href="../Projeto-Gamer/css/cadastroequipes.css">
+    <title>Cadastro de Jogadores</title>
+    <link rel="stylesheet" href="../Projeto-Gamer/css/cadastrojogadores.css">
 </head>
 
 
@@ -144,30 +144,45 @@
 
         <section>
             <article class="layout-grid box-geral">
-                <div>
+                
+                <div id="align-inputs">
                     <div id="align-center">
-                        <h1 id="h1-cadastro">cadastro de equipes</h1>
+                        <h1 id="h1-cadastro">cadastro de jogadores</h1>
                         <hr>
                     </div>
 
-                    <!-- input ID da equipe -->
+                    <!-- input ID do jogador -->
                     <form action="">
                         <div class="box-input">
-                            <input class="input" type="text" placeholder="Digite o ID da sua equipe:">
+                            <input class="input" type="text" placeholder="Digite o ID do jogador:">
                         </div>
                     </form>
                     <!-- Input nome da equipe -->
                     <form action="">
                         <div class="box-input">
-                            <input class="input" type="text" placeholder="Digite o nome da sua equipe:">
+                            <input class="input" type="text" placeholder="Selecione uma Equipe:">
+                        </div>
+                    </form>
+                    <!-- Input nome da equipe -->
+                    <form action="">
+                        <div class="box-input">
+                            <input class="input" type="text" placeholder="Digite o Nome do Jogador:">
+                        </div>
+                    </form>
+                    <!-- Input nome da equipe -->
+                    <form action="">
+                        <div class="box-input">
+                            <input class="input" type="email" placeholder="Digite o Email do Jogador:">
+                        </div>
+                    </form>
+                    <!-- Input nome da equipe -->
+                    <form action="">
+                        <div class="box-input">
+                            <input class="input" type="password" placeholder="Digite a Senha:">
                         </div>
                     </form>
                 </div>
-                <!-- Botao imagem da equipe / p -->
-                <div id="button-image-p">
-                    <button class="button-image">Imagem da equipe</button>
-                    <p id="p-imagem">Nenhuma imagem selecionada...</p>
-                </div>
+
 
                 <button class="button-cadastrar">Cadastrar</button>
 
@@ -187,7 +202,7 @@
                     <!-- sao as celulas que serao criadas dentro da TR -->
                     <th>Id</th>
                     <th>Nome</th>
-                    <th>Foto</th>
+                    <th>Email</th>
                     <th>&nbsp;</th>
                 </tr>
 
@@ -204,8 +219,8 @@
 
                 <tr class="blur">
                     <td>1</td>
-                    <td>Loud</td>
-                    <td><img src="../Projeto-Gamer/assets/icons/LOUD_LOGO 1.svg" alt="logo da Loud"></td>
+                    <td>João</td>
+                    <td>joao@gmail.com</td>
                     <td><img src="../Projeto-Gamer/assets/icons/trash-yellow.svg" alt="lixeira amarela"></td>
                 </tr>
 
@@ -213,8 +228,8 @@
 
                 <tr class="blur">
                     <td>2</td>
-                    <td>Loud</td>
-                    <td><img src="../Projeto-Gamer/assets/icons/LOUD_LOGO 1.svg" alt="logo da Loud"></td>
+                    <td>João</td>
+                    <td>joao@gmail.com</td>
                     <td><img src="../Projeto-Gamer/assets/icons/trash-yellow.svg" alt="lixeira amarela"></td>
                 </tr>
 
@@ -222,8 +237,8 @@
 
                 <tr class="blur">
                     <td>3</td>
-                    <td>Loud</td>
-                    <td><img src="../Projeto-Gamer/assets/icons/LOUD_LOGO 1.svg" alt="logo da Loud"></td>
+                    <td>João</td>
+                    <td>joao@gmail.com</td>
                     <td><img src="../Projeto-Gamer/assets/icons/trash-yellow.svg" alt="lixeira amarela"></td>
                 </tr>
 
@@ -231,11 +246,15 @@
 
                 <tr class="blur">
                     <td>4</td>
-                    <td>Loud</td>
-                    <td><img src="../Projeto-Gamer/assets/icons/LOUD_LOGO 1.svg" alt="logo da Loud"></td>
+                    <td>João</td>
+                    <td>joao@gmail.com</td>
                     <td><img src="../Projeto-Gamer/assets/icons/trash-yellow.svg" alt="lixeira amarela"></td>
                 </tr>
 
+                <th class="space"></th>
+                
+
+                
             </tbody>
 
         </table>

@@ -425,6 +425,8 @@ footer {
     padding-bottom: 40px;
     background-image: url(../assets/images/background-footer.png);
     box-shadow: inset 0px 30px 500px rgba(0, 0, 0, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
