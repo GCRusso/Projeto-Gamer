@@ -346,7 +346,6 @@ td {
     padding: 7px 0px;
     border: none;
 
-
 }
 
 /* borda abaixo do titulo */
@@ -372,8 +371,11 @@ table tbody td:last-of-type {
 }
 
 .blur {
-    backdrop-filter: blur(25px);
-    border-radius: 8px;
+    
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 03, 65, 0.4));
+    backdrop-filter: blur(15px);
+
 }
 
 
